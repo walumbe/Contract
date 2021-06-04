@@ -1,0 +1,28 @@
+ Install xampp.
+ cd into htdocs .ie c://xampp/htdocs/.
+ git clone the repository
+
+ ie. git clone 
+
+
+
+ create database 'hono_contracts';
+
+
+ CREATE TABLE `contracts` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `start_date` date NOT NULL,
+  `end_date` date NOT NULL,
+  `description` varchar(200) NOT NULL,
+  `category` varchar(20) NOT NULL,
+  `phone_number` bigint(20) NOT NULL,
+  `email_address` varchar(30) NOT NULL,
+  `status` varchar(20) NOT NULL,
+  `termination_date` date NOT NULL,
+  `reason_for_termination` varchar(200) NOT NULL,
+  `date_created` datetime NOT NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 |
+
+
+open the browser and type localhost/Contrast.
